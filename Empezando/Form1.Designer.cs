@@ -148,6 +148,7 @@
             this.btnCalcular.TabIndex = 10;
             this.btnCalcular.Text = "Calcular";
             this.btnCalcular.UseVisualStyleBackColor = true;
+            this.btnCalcular.Click += new System.EventHandler(this.btnCalcular_Click);
             // 
             // FrmPrimcipal
             // 

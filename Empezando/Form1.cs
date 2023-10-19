@@ -17,6 +17,21 @@ namespace Empezando
             InitializeComponent();
         }
 
-        
+        private void btnCalcular_Click(object sender, EventArgs e)
+        {
+            float numero = float.Parse(txtNumero.Text);
+            float porcentaje = float.Parse(txtPorcentaje.Text);
+            float porcentajemod = (porcentaje / 100) + 1;
+            float resultado;
+            if (rbSumar.Checked)
+            {
+                resultado = numero * porcentajemod;
+                txtResultado.Text = resultado.ToString();   
+            }else if (rbRestar.Checked)
+            {
+                resultado = numero / porcentajemod;
+                txtResultado.Text = resultado.ToString();
+            }
+        }
     }
 }
