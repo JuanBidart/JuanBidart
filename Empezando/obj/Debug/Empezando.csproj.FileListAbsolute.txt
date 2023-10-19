@@ -1,0 +1,10 @@
+C:\Users\Juan Diego\Desktop\Proyectos_visual\Empezando\Empezando\bin\Debug\Empezando.exe.config
+C:\Users\Juan Diego\Desktop\Proyectos_visual\Empezando\Empezando\bin\Debug\Empezando.exe
+C:\Users\Juan Diego\Desktop\Proyectos_visual\Empezando\Empezando\bin\Debug\Empezando.pdb
+C:\Users\Juan Diego\Desktop\Proyectos_visual\Empezando\Empezando\obj\Debug\Empezando.csproj.AssemblyReference.cache
+C:\Users\Juan Diego\Desktop\Proyectos_visual\Empezando\Empezando\obj\Debug\Empezando.Properties.Resources.resources
+C:\Users\Juan Diego\Desktop\Proyectos_visual\Empezando\Empezando\obj\Debug\Empezando.csproj.GenerateResource.cache
+C:\Users\Juan Diego\Desktop\Proyectos_visual\Empezando\Empezando\obj\Debug\Empezando.csproj.CoreCompileInputs.cache
+C:\Users\Juan Diego\Desktop\Proyectos_visual\Empezando\Empezando\obj\Debug\Empezando.exe
+C:\Users\Juan Diego\Desktop\Proyectos_visual\Empezando\Empezando\obj\Debug\Empezando.pdb
+C:\Users\Juan Diego\Desktop\Proyectos_visual\Empezando\Empezando\obj\Debug\Empezando.FrmPrimcipal.resources
