@@ -39,13 +39,14 @@
             this.lblResultado = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.btnCalcular = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // txtNumero
             // 
             this.txtNumero.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNumero.Location = new System.Drawing.Point(126, 36);
+            this.txtNumero.Location = new System.Drawing.Point(118, 30);
             this.txtNumero.Name = "txtNumero";
             this.txtNumero.Size = new System.Drawing.Size(125, 35);
             this.txtNumero.TabIndex = 0;
@@ -76,7 +77,7 @@
             // lblNumero
             // 
             this.lblNumero.AutoSize = true;
-            this.lblNumero.Location = new System.Drawing.Point(73, 47);
+            this.lblNumero.Location = new System.Drawing.Point(65, 41);
             this.lblNumero.Name = "lblNumero";
             this.lblNumero.Size = new System.Drawing.Size(47, 13);
             this.lblNumero.TabIndex = 3;
@@ -85,7 +86,7 @@
             // txtPorcentaje
             // 
             this.txtPorcentaje.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPorcentaje.Location = new System.Drawing.Point(126, 135);
+            this.txtPorcentaje.Location = new System.Drawing.Point(118, 129);
             this.txtPorcentaje.Name = "txtPorcentaje";
             this.txtPorcentaje.Size = new System.Drawing.Size(55, 35);
             this.txtPorcentaje.TabIndex = 4;
@@ -95,7 +96,7 @@
             // 
             this.lblPorcentaje.AutoSize = true;
             this.lblPorcentaje.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPorcentaje.Location = new System.Drawing.Point(183, 138);
+            this.lblPorcentaje.Location = new System.Drawing.Point(175, 132);
             this.lblPorcentaje.Name = "lblPorcentaje";
             this.lblPorcentaje.Size = new System.Drawing.Size(35, 29);
             this.lblPorcentaje.TabIndex = 5;
@@ -104,7 +105,7 @@
             // txtResultado
             // 
             this.txtResultado.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtResultado.Location = new System.Drawing.Point(126, 213);
+            this.txtResultado.Location = new System.Drawing.Point(118, 232);
             this.txtResultado.Name = "txtResultado";
             this.txtResultado.Size = new System.Drawing.Size(125, 35);
             this.txtResultado.TabIndex = 6;
@@ -113,7 +114,7 @@
             // lblResultado
             // 
             this.lblResultado.AutoSize = true;
-            this.lblResultado.Location = new System.Drawing.Point(61, 224);
+            this.lblResultado.Location = new System.Drawing.Point(53, 243);
             this.lblResultado.Name = "lblResultado";
             this.lblResultado.Size = new System.Drawing.Size(58, 13);
             this.lblResultado.TabIndex = 7;
@@ -123,7 +124,7 @@
             // 
             this.groupBox1.Controls.Add(this.rbRestar);
             this.groupBox1.Controls.Add(this.rbSumar);
-            this.groupBox1.Location = new System.Drawing.Point(76, 84);
+            this.groupBox1.Location = new System.Drawing.Point(68, 78);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(175, 43);
             this.groupBox1.TabIndex = 8;
@@ -133,17 +134,27 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(59, 146);
+            this.label1.Location = new System.Drawing.Point(51, 140);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(61, 13);
             this.label1.TabIndex = 9;
             this.label1.Text = "Porcentaje:";
             // 
+            // btnCalcular
+            // 
+            this.btnCalcular.Location = new System.Drawing.Point(56, 185);
+            this.btnCalcular.Name = "btnCalcular";
+            this.btnCalcular.Size = new System.Drawing.Size(187, 24);
+            this.btnCalcular.TabIndex = 10;
+            this.btnCalcular.Text = "Calcular";
+            this.btnCalcular.UseVisualStyleBackColor = true;
+            // 
             // FrmPrimcipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(328, 285);
+            this.ClientSize = new System.Drawing.Size(314, 285);
+            this.Controls.Add(this.btnCalcular);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.lblResultado);
@@ -175,6 +186,7 @@
         private System.Windows.Forms.Label lblResultado;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnCalcular;
     }
 }
 
