@@ -48,10 +48,11 @@ namespace Empezando
                     txtResultadoComun.Text = resultadoComun.ToString();
                 }
             }
-            catch (Exception ex)
-            {
-
-                MessageBox.Show("Error del Programa verifique los datos infresados", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+            catch (Exception ex) { 
+            
+                
+                MessageBox.Show("Error del Programa verifique los datos ingresados", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+                
             }
             
         }
