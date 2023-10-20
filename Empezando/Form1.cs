@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics.SymbolStore;
 using System.Drawing;
 using System.Linq;
 using System.Runtime.InteropServices;
@@ -11,19 +12,21 @@ using System.Windows.Forms;
 
 namespace Empezando
 {
-    public partial class FrmPrimcipal : Form
+    public partial class FrmPrincipal : Form
     {
-        public FrmPrimcipal()
+        public FrmPrincipal()
         {
             InitializeComponent();
+            lvHistorial.Size = new System.Drawing.Size(439, 120);
         }
 
         private void btnCalcular_Click(object sender, EventArgs e)
         {
-            
+            string historial="";
+            float numero;
             try
             {
-                float numero;
+                
                 if (txtNumero.Text.Contains("$"))
                 {
                     numero = float.Parse(txtNumero.Text.Remove(0, 1));
@@ -39,6 +42,7 @@ namespace Empezando
                     resultadoComun = (numero * porcentaje) / 100 + numero;
                     txtResultadoReal.Text = resultadoReal.ToString();
                     txtResultadoComun.Text = resultadoComun.ToString();
+                    historial =  $"La SUMA del " + porcentaje.ToString() + "% de " + numero.ToString() +  " Real: " + $"{txtResultadoReal.Text.ToString()}" + "  Comun: " + $"{ txtResultadoComun.Text.ToString()}";
                 }
                 else if (rbRestar.Checked)
                 {
@@ -46,7 +50,22 @@ namespace Empezando
                     resultadoComun = numero - ((numero * porcentaje) / 100);
                     txtResultadoReal.Text = resultadoReal.ToString();
                     txtResultadoComun.Text = resultadoComun.ToString();
+                    historial = $"La RESTA del " + porcentaje.ToString() + "% de " + numero.ToString() + " Real: " + $"{txtResultadoReal.Text.ToString()}" + "  Comun: " + $"{txtResultadoComun.Text.ToString()}";
                 }
+                
+                if (historial.Contains("SUMA"))
+                {
+                    lvHistorial.Items.Insert(0,historial).ForeColor = Color.Green;
+                   
+
+                }
+                else if (historial.Contains("RESTA"))
+                {
+                    lvHistorial.Items.Insert(0,historial).ForeColor = Color.Red;
+                    
+                }
+               
+
             }
             catch (Exception ex) { 
             
@@ -57,9 +76,6 @@ namespace Empezando
             
         }
 
-        private void FrmPrimcipal_Load(object sender, EventArgs e)
-        {
-            txtNumero.AppendText("$");
-        }
+        
     }
 }

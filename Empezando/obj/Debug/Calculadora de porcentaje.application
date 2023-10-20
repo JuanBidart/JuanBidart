@@ -7,14 +7,22 @@
     <framework targetVersion="4.8" profile="Full" supportedRuntime="4.0.30319" />
   </compatibleFrameworks>
   <dependency>
+<<<<<<< HEAD
     <dependentAssembly dependencyType="install" codebase="Calculadora de porcentaje.exe.manifest" size="5249">
+=======
+    <dependentAssembly dependencyType="install" codebase="Calculadora de porcentaje.exe.manifest" size="5941">
+>>>>>>> HISTORIAL
       <assemblyIdentity name="Calculadora de porcentaje.exe" version="1.0.0.2" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+<<<<<<< HEAD
         <dsig:DigestValue>MwMziicvPKP4yCQO6PSvcnPKW1K4xLSRzHI/7NPUZKI=</dsig:DigestValue>
+=======
+        <dsig:DigestValue>hHqNdsj6OjtPUSgwOROZB6xvH54W3y7zmACs/vopoLc=</dsig:DigestValue>
+>>>>>>> HISTORIAL
       </hash>
     </dependentAssembly>
   </dependency>
