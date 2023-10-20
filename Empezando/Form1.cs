@@ -42,7 +42,7 @@ namespace Empezando
                     resultadoComun = (numero * porcentaje) / 100 + numero;
                     txtResultadoReal.Text = resultadoReal.ToString();
                     txtResultadoComun.Text = resultadoComun.ToString();
-                    historial =  $"La SUMA del " + porcentaje.ToString() + "% de" + numero.ToString() +  "Real: " + $"{txtResultadoReal.Text.ToString()}" + "  Comun: " + $"{ txtResultadoComun.Text.ToString()}";
+                    historial =  $"La SUMA del " + porcentaje.ToString() + "% de " + numero.ToString() +  " Real: " + $"{txtResultadoReal.Text.ToString()}" + "  Comun: " + $"{ txtResultadoComun.Text.ToString()}";
                 }
                 else if (rbRestar.Checked)
                 {
@@ -50,7 +50,7 @@ namespace Empezando
                     resultadoComun = numero - ((numero * porcentaje) / 100);
                     txtResultadoReal.Text = resultadoReal.ToString();
                     txtResultadoComun.Text = resultadoComun.ToString();
-                    historial = $"La RESTA del " + porcentaje.ToString() + "% de" + numero.ToString() + "Real: " + $"{txtResultadoReal.Text.ToString()}" + "  Comun: " + $"{txtResultadoComun.Text.ToString()}";
+                    historial = $"La RESTA del " + porcentaje.ToString() + "% de " + numero.ToString() + " Real: " + $"{txtResultadoReal.Text.ToString()}" + "  Comun: " + $"{txtResultadoComun.Text.ToString()}";
                 }
                 
                 if (historial.Contains("SUMA"))
