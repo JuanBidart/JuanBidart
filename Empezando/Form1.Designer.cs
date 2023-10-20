@@ -1,6 +1,6 @@
 ﻿namespace Empezando
 {
-    partial class FrmPrimcipal
+    partial class FrmPrincipal
     {
         /// <summary>
         /// Variable del diseñador necesaria.
@@ -28,173 +28,153 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmPrimcipal));
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmPrincipal));
             this.txtNumero = new System.Windows.Forms.TextBox();
             this.rbSumar = new System.Windows.Forms.RadioButton();
             this.rbRestar = new System.Windows.Forms.RadioButton();
             this.lblNumero = new System.Windows.Forms.Label();
             this.txtPorcentaje = new System.Windows.Forms.TextBox();
             this.lblPorcentaje = new System.Windows.Forms.Label();
-            this.txtResultadoReal = new System.Windows.Forms.TextBox();
-            this.lblResultado = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btnCalcular = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
+            this.lvHistorial = new System.Windows.Forms.ListView();
+            this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
+            this.txtResultadoReal = new System.Windows.Forms.TextBox();
+            this.lblResultado = new System.Windows.Forms.Label();
             this.txtResultadoComun = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.lblHistorial = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // txtNumero
             // 
-            this.txtNumero.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNumero.Location = new System.Drawing.Point(118, 30);
+            resources.ApplyResources(this.txtNumero, "txtNumero");
             this.txtNumero.Name = "txtNumero";
-            this.txtNumero.Size = new System.Drawing.Size(125, 35);
-            this.txtNumero.TabIndex = 0;
-            this.txtNumero.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // rbSumar
             // 
-            this.rbSumar.AutoSize = true;
-            this.rbSumar.Location = new System.Drawing.Point(6, 19);
+            resources.ApplyResources(this.rbSumar, "rbSumar");
             this.rbSumar.Name = "rbSumar";
-            this.rbSumar.Size = new System.Drawing.Size(70, 17);
-            this.rbSumar.TabIndex = 1;
             this.rbSumar.TabStop = true;
-            this.rbSumar.Text = "Sumar (+)";
             this.rbSumar.UseVisualStyleBackColor = true;
             // 
             // rbRestar
             // 
-            this.rbRestar.AutoSize = true;
-            this.rbRestar.Location = new System.Drawing.Point(101, 19);
+            resources.ApplyResources(this.rbRestar, "rbRestar");
             this.rbRestar.Name = "rbRestar";
-            this.rbRestar.Size = new System.Drawing.Size(68, 17);
-            this.rbRestar.TabIndex = 2;
             this.rbRestar.TabStop = true;
-            this.rbRestar.Text = "Restar (-)";
             this.rbRestar.UseVisualStyleBackColor = true;
             // 
             // lblNumero
             // 
-            this.lblNumero.AutoSize = true;
-            this.lblNumero.Location = new System.Drawing.Point(65, 41);
+            resources.ApplyResources(this.lblNumero, "lblNumero");
             this.lblNumero.Name = "lblNumero";
-            this.lblNumero.Size = new System.Drawing.Size(47, 13);
-            this.lblNumero.TabIndex = 3;
-            this.lblNumero.Text = "Numero:";
             // 
             // txtPorcentaje
             // 
-            this.txtPorcentaje.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPorcentaje.Location = new System.Drawing.Point(118, 129);
+            resources.ApplyResources(this.txtPorcentaje, "txtPorcentaje");
             this.txtPorcentaje.Name = "txtPorcentaje";
-            this.txtPorcentaje.Size = new System.Drawing.Size(55, 35);
-            this.txtPorcentaje.TabIndex = 4;
-            this.txtPorcentaje.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // lblPorcentaje
             // 
-            this.lblPorcentaje.AutoSize = true;
-            this.lblPorcentaje.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPorcentaje.Location = new System.Drawing.Point(175, 132);
+            resources.ApplyResources(this.lblPorcentaje, "lblPorcentaje");
             this.lblPorcentaje.Name = "lblPorcentaje";
-            this.lblPorcentaje.Size = new System.Drawing.Size(35, 29);
-            this.lblPorcentaje.TabIndex = 5;
-            this.lblPorcentaje.Text = "%";
-            // 
-            // txtResultadoReal
-            // 
-            this.txtResultadoReal.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtResultadoReal.Location = new System.Drawing.Point(119, 234);
-            this.txtResultadoReal.Name = "txtResultadoReal";
-            this.txtResultadoReal.Size = new System.Drawing.Size(125, 35);
-            this.txtResultadoReal.TabIndex = 6;
-            this.txtResultadoReal.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // lblResultado
-            // 
-            this.lblResultado.AutoSize = true;
-            this.lblResultado.Location = new System.Drawing.Point(58, 238);
-            this.lblResultado.Name = "lblResultado";
-            this.lblResultado.Size = new System.Drawing.Size(55, 26);
-            this.lblResultado.TabIndex = 7;
-            this.lblResultado.Text = "Resultado\r\nReal";
-            this.lblResultado.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // groupBox1
             // 
+            resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.Controls.Add(this.rbRestar);
             this.groupBox1.Controls.Add(this.rbSumar);
-            this.groupBox1.Location = new System.Drawing.Point(68, 78);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(175, 43);
-            this.groupBox1.TabIndex = 8;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Elegir Opcion";
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(51, 140);
+            resources.ApplyResources(this.label1, "label1");
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(61, 13);
-            this.label1.TabIndex = 9;
-            this.label1.Text = "Porcentaje:";
             // 
             // btnCalcular
             // 
-            this.btnCalcular.Location = new System.Drawing.Point(56, 185);
+            resources.ApplyResources(this.btnCalcular, "btnCalcular");
             this.btnCalcular.Name = "btnCalcular";
-            this.btnCalcular.Size = new System.Drawing.Size(187, 24);
-            this.btnCalcular.TabIndex = 10;
-            this.btnCalcular.Text = "Calcular";
             this.btnCalcular.UseVisualStyleBackColor = true;
             this.btnCalcular.Click += new System.EventHandler(this.btnCalcular_Click);
             // 
-            // label2
+            // lvHistorial
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(57, 297);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(55, 26);
-            this.label2.TabIndex = 12;
-            this.label2.Text = "Resultado\r\nComún";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            resources.ApplyResources(this.lvHistorial, "lvHistorial");
+            this.lvHistorial.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lvHistorial.HideSelection = false;
+            this.lvHistorial.Name = "lvHistorial";
+            this.lvHistorial.TabStop = false;
+            this.lvHistorial.UseCompatibleStateImageBehavior = false;
+            this.lvHistorial.View = System.Windows.Forms.View.List;
+            // 
+            // notifyIcon1
+            // 
+            resources.ApplyResources(this.notifyIcon1, "notifyIcon1");
+            // 
+            // txtResultadoReal
+            // 
+            resources.ApplyResources(this.txtResultadoReal, "txtResultadoReal");
+            this.txtResultadoReal.Name = "txtResultadoReal";
+            // 
+            // lblResultado
+            // 
+            resources.ApplyResources(this.lblResultado, "lblResultado");
+            this.lblResultado.Name = "lblResultado";
             // 
             // txtResultadoComun
             // 
-            this.txtResultadoComun.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtResultadoComun.Location = new System.Drawing.Point(119, 293);
+            resources.ApplyResources(this.txtResultadoComun, "txtResultadoComun");
             this.txtResultadoComun.Name = "txtResultadoComun";
-            this.txtResultadoComun.Size = new System.Drawing.Size(125, 35);
-            this.txtResultadoComun.TabIndex = 11;
-            this.txtResultadoComun.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // FrmPrimcipal
+            // label2
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            resources.ApplyResources(this.label2, "label2");
+            this.label2.Name = "label2";
+            // 
+            // groupBox2
+            // 
+            resources.ApplyResources(this.groupBox2, "groupBox2");
+            this.groupBox2.Controls.Add(this.label2);
+            this.groupBox2.Controls.Add(this.txtResultadoComun);
+            this.groupBox2.Controls.Add(this.lblResultado);
+            this.groupBox2.Controls.Add(this.txtResultadoReal);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.TabStop = false;
+            // 
+            // lblHistorial
+            // 
+            resources.ApplyResources(this.lblHistorial, "lblHistorial");
+            this.lblHistorial.Name = "lblHistorial";
+            // 
+            // FrmPrincipal
+            // 
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(314, 372);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.txtResultadoComun);
+            this.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.Controls.Add(this.lblHistorial);
+            this.Controls.Add(this.groupBox2);
+            this.Controls.Add(this.lvHistorial);
             this.Controls.Add(this.btnCalcular);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.lblResultado);
-            this.Controls.Add(this.txtResultadoReal);
             this.Controls.Add(this.lblPorcentaje);
             this.Controls.Add(this.txtPorcentaje);
             this.Controls.Add(this.lblNumero);
             this.Controls.Add(this.txtNumero);
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "FrmPrimcipal";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Calculadora de Porcentaje";
-            this.Load += new System.EventHandler(this.FrmPrimcipal_Load);
+            this.MaximizeBox = false;
+            this.Name = "FrmPrincipal";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -208,13 +188,17 @@
         private System.Windows.Forms.Label lblNumero;
         private System.Windows.Forms.TextBox txtPorcentaje;
         private System.Windows.Forms.Label lblPorcentaje;
-        private System.Windows.Forms.TextBox txtResultadoReal;
-        private System.Windows.Forms.Label lblResultado;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnCalcular;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.ListView lvHistorial;
+        private System.Windows.Forms.NotifyIcon notifyIcon1;
+        private System.Windows.Forms.TextBox txtResultadoReal;
+        private System.Windows.Forms.Label lblResultado;
         private System.Windows.Forms.TextBox txtResultadoComun;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.Label lblHistorial;
     }
 }
 
