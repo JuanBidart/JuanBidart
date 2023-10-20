@@ -35,11 +35,13 @@
             this.lblNumero = new System.Windows.Forms.Label();
             this.txtPorcentaje = new System.Windows.Forms.TextBox();
             this.lblPorcentaje = new System.Windows.Forms.Label();
-            this.txtResultado = new System.Windows.Forms.TextBox();
+            this.txtResultadoReal = new System.Windows.Forms.TextBox();
             this.lblResultado = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btnCalcular = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txtResultadoComun = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -102,23 +104,24 @@
             this.lblPorcentaje.TabIndex = 5;
             this.lblPorcentaje.Text = "%";
             // 
-            // txtResultado
+            // txtResultadoReal
             // 
-            this.txtResultado.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtResultado.Location = new System.Drawing.Point(118, 232);
-            this.txtResultado.Name = "txtResultado";
-            this.txtResultado.Size = new System.Drawing.Size(125, 35);
-            this.txtResultado.TabIndex = 6;
-            this.txtResultado.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtResultadoReal.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtResultadoReal.Location = new System.Drawing.Point(119, 234);
+            this.txtResultadoReal.Name = "txtResultadoReal";
+            this.txtResultadoReal.Size = new System.Drawing.Size(125, 35);
+            this.txtResultadoReal.TabIndex = 6;
+            this.txtResultadoReal.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // lblResultado
             // 
             this.lblResultado.AutoSize = true;
-            this.lblResultado.Location = new System.Drawing.Point(53, 243);
+            this.lblResultado.Location = new System.Drawing.Point(58, 238);
             this.lblResultado.Name = "lblResultado";
-            this.lblResultado.Size = new System.Drawing.Size(58, 13);
+            this.lblResultado.Size = new System.Drawing.Size(55, 26);
             this.lblResultado.TabIndex = 7;
-            this.lblResultado.Text = "Resultado:";
+            this.lblResultado.Text = "Resultado\r\nReal";
+            this.lblResultado.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // groupBox1
             // 
@@ -150,16 +153,37 @@
             this.btnCalcular.UseVisualStyleBackColor = true;
             this.btnCalcular.Click += new System.EventHandler(this.btnCalcular_Click);
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(57, 297);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(55, 26);
+            this.label2.TabIndex = 12;
+            this.label2.Text = "Resultado\r\nComún";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // txtResultadoComun
+            // 
+            this.txtResultadoComun.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtResultadoComun.Location = new System.Drawing.Point(119, 293);
+            this.txtResultadoComun.Name = "txtResultadoComun";
+            this.txtResultadoComun.Size = new System.Drawing.Size(125, 35);
+            this.txtResultadoComun.TabIndex = 11;
+            this.txtResultadoComun.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
             // FrmPrimcipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(314, 285);
+            this.ClientSize = new System.Drawing.Size(314, 372);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.txtResultadoComun);
             this.Controls.Add(this.btnCalcular);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.lblResultado);
-            this.Controls.Add(this.txtResultado);
+            this.Controls.Add(this.txtResultadoReal);
             this.Controls.Add(this.lblPorcentaje);
             this.Controls.Add(this.txtPorcentaje);
             this.Controls.Add(this.lblNumero);
@@ -168,6 +192,7 @@
             this.Name = "FrmPrimcipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Calculadora de Porcentaje";
+            this.Load += new System.EventHandler(this.FrmPrimcipal_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
@@ -183,11 +208,13 @@
         private System.Windows.Forms.Label lblNumero;
         private System.Windows.Forms.TextBox txtPorcentaje;
         private System.Windows.Forms.Label lblPorcentaje;
-        private System.Windows.Forms.TextBox txtResultado;
+        private System.Windows.Forms.TextBox txtResultadoReal;
         private System.Windows.Forms.Label lblResultado;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnCalcular;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox txtResultadoComun;
     }
 }
 
